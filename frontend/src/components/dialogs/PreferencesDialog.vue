@@ -278,19 +278,6 @@ const onClose = () => {
                                 :options="keyOptions"
                                 :render-label="({ label }) => $t(label)" />
                         </n-form-item-gi>
-                        <n-form-item-gi :label="$t('preferences.general.update')" :span="24">
-                            <n-checkbox v-model:checked="prefStore.general.checkUpdate">
-                                {{ $t('preferences.general.auto_check_update') }}
-                            </n-checkbox>
-                        </n-form-item-gi>
-                        <n-form-item-gi :label="$t('preferences.general.privacy')" :span="24">
-                            <n-checkbox v-model:checked="prefStore.general.allowTrack">
-                                {{ $t('preferences.general.allow_track') }}
-                                <n-button style="text-decoration: underline" text type="primary" @click="onOpenPrivacy">
-                                    {{ $t('preferences.general.privacy') }}
-                                </n-button>
-                            </n-checkbox>
-                        </n-form-item-gi>
                     </n-grid>
                 </n-form>
             </n-tab-pane>

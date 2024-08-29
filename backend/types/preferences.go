@@ -23,8 +23,8 @@ func NewPreferences() Preferences {
 			FontSize:     consts.DEFAULT_FONT_SIZE,
 			ScanSize:     consts.DEFAULT_SCAN_SIZE,
 			KeyIconStyle: 0,
-			CheckUpdate:  true,
-			AllowTrack:   true,
+			CheckUpdate:  false,
+			AllowTrack:   false,
 		},
 		Editor: PreferencesEditor{
 			FontSize:       consts.DEFAULT_FONT_SIZE,

@@ -23,6 +23,10 @@ const onOpenSource = () => {
 const onOpenWebsite = () => {
     BrowserOpenURL('https://redis.tinycraft.cc/')
 }
+
+const onOpenSourceZgcwkj = () => {
+    BrowserOpenURL('https://github.com/zgcwkjOpenProject/GO_TinyRdm')
+}
 </script>
 
 <template>
@@ -30,11 +34,13 @@ const onOpenWebsite = () => {
         <n-space :size="10" :wrap="false" :wrap-item="false" align="center" vertical>
             <n-avatar :size="120" :src="iconUrl" color="#0000"></n-avatar>
             <div class="about-app-title">Tiny RDM</div>
-            <n-text>{{ version }}</n-text>
+            <n-text>去除更新和匿名统计版本</n-text>
             <n-space :size="5" :wrap="false" :wrap-item="false" align="center">
                 <n-text class="about-link" @click="onOpenSource">{{ $t('dialogue.about.source') }}</n-text>
                 <n-divider vertical />
                 <n-text class="about-link" @click="onOpenWebsite">{{ $t('dialogue.about.website') }}</n-text>
+                <n-divider vertical />
+                <n-text class="about-link" @click="onOpenSourceZgcwkj">修改版源码</n-text>
             </n-space>
             <div :style="{ color: themeVars.textColor3 }" class="about-copyright">
                 Copyright © 2024 Tinycraft.cc All rights reserved
